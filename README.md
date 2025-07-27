@@ -1,24 +1,26 @@
-### Regras da aplicação
+## FastFeetApi
+ -  API para controle de encomendas de uma transportadora fictícia, a FastFeet.
 
-- [ ] Deve ser possível cadastrar um pet
-- [ ] Deve ser possível listar todos os pets disponíveis para adoção em uma cidade
-- [ ] Deve ser possível filtrar pets por suas características
-- [ ] Deve ser possível visualizar detalhes de um pet para adoção
-- [ ] Deve ser possível se cadastrar como uma ORG
-- [ ] Deve ser possível realizar login como uma ORG
+### Regras da aplicação
+[ ] A aplicação deve ter dois tipos de usuário, entregador e/ou admin
+[ ] Deve ser possível realizar login com CPF e Senha
+[ ] Deve ser possível realizar o CRUD dos entregadores
+[ ] Deve ser possível realizar o CRUD das encomendas
+[ ] Deve ser possível realizar o CRUD dos destinatários
+[ ] Deve ser possível marcar uma encomenda como aguardando (Disponível para retirada)
+[ ] Deve ser possível retirar uma encomenda
+[ ] Deve ser possível marcar uma encomenda como entregue
+[ ] Deve ser possível marcar uma encomenda como devolvida
+[ ] Deve ser possível listar as encomendas com endereços de entrega próximo ao local do entregador
+[ ] Deve ser possível alterar a senha de um usuário
+[ ] Deve ser possível listar as entregas de um usuário
+[ ] Deve ser possível notificar o destinatário a cada alteração no status da encomenda
 
 ### Regras de negócio
-
-- Para listar os pets, obrigatoriamente precisamos informar a cidade
-- Uma ORG precisa ter um endereço e um número de WhatsApp
-- Um pet deve estar ligado a uma ORG
-- O usuário que quer adotar, entrará em contato com a ORG via WhatsApp
-- Todos os filtros, além da cidade, são opcionais
-- Para uma ORG acessar a aplicação como admin, ela precisa estar logada
-  
-## Rnfs (Requisitos não funcionais)
-
-- [x] A senha do usuario precisar estar criptografada;
-- [x] Os dados da aplicacao precisam estar persistidos em um banco PostgreSQL;
-- [x] Todas as listas de dados precisam estar paginadas com 20 itens por pagina;
-- [x] O usuario deve ser identificado por um JWT (JSON Web Token);
+[ ] Somente usuário do tipo admin pode realizar operações de CRUD nas encomendas
+[ ] Somente usuário do tipo admin pode realizar operações de CRUD dos entregadores
+[ ] Somente usuário do tipo admin pode realizar operações de CRUD dos destinatários
+[ ] Para marcar uma encomenda como entregue é obrigatório o envio de uma foto
+[ ] Somente o entregador que retirou a encomenda pode marcar ela como entregue
+[ ] Não deve ser possível um entregador listar as encomendas de outro entregador
+[ ] Somente o admin pode alterar a senha de um usuário

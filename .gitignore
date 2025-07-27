@@ -1,0 +1,10 @@
+#IDE
+.vscode/
+
+# dependencies
+/node_modules
+pagckage-lock.json
+
+# production
+/build
+.env

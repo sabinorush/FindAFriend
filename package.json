@@ -1,0 +1,22 @@
+{
+  "name": "fastfeet",
+  "version": "1.0.0",
+  "description": "-  API para controle de encomendas de uma transportadora fictícia, a FastFeet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "typescript": "^5.8.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
+}
