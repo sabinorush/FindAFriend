@@ -1,6 +1,6 @@
 import { MakePackageDeliveryUseCase } from './make-package-delivery'
 import { DeliveryPackageRepository } from '../repositories/package-delivery-repository'
-import { Package } from '../entities/package'
+import { Package } from '../../enterprise/entities/package'
 
 const fakeDeliveryRepository: DeliveryPackageRepository = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

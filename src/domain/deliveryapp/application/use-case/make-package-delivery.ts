@@ -1,5 +1,5 @@
-import { Package } from '../entities/package'
-import { UniqueEntityId } from '../../core/entities/unique-entity-id'
+import { Package } from '../../enterprise/entities/package'
+import { UniqueEntityId } from '@/core/entities/unique-entity-id'
 import { DeliveryPackageRepository } from '../repositories/package-delivery-repository'
 
 interface MakeDeliveryUseCaseRequest {
