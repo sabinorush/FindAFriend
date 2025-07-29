@@ -1,12 +1,10 @@
-import { MakePackageDeliveryUseCase } from './make-package-delivery';
-import { DeliveryPackageRepository } from '../repositories/package-delivery-repository';
-import { Package } from '../entities/package';
-
+import { MakePackageDeliveryUseCase } from './make-package-delivery'
+import { DeliveryPackageRepository } from '../repositories/package-delivery-repository'
+import { Package } from '../entities/package'
 
 const fakeDeliveryRepository: DeliveryPackageRepository = {
-  createDelivery: async (packageDelivery: Package) => {
-    return;
-  }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  createDelivery: async (packageDelivery: Package) => {},
 }
 
 test('create a delivery', async () => {
@@ -18,5 +16,5 @@ test('create a delivery', async () => {
     status: 'DELIVERED',
   })
 
-  expect(packageDelivery.id).toBeDefined();
+  expect(packageDelivery.id).toBeDefined()
 })

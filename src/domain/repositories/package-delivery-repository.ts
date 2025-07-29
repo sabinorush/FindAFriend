@@ -1,6 +1,5 @@
-import { Package } from "../entities/package";
-
+import { Package } from '../entities/package'
 
 export interface DeliveryPackageRepository {
-  createDelivery(pckg: Package): Promise<void>;
-  }
+  createDelivery(pckg: Package): Promise<void>
+}
